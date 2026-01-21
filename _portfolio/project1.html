@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio – Project 2</title>
 
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .cover img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    .description {
+      margin-top: 24px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Project 1 – 建筑作品展示</h1>
+
+    <div class="cover">
+      <img src="/images/portfolio/project2/cover.jpg" alt="项目封面">
+    </div>
+
+    <div class="description">
+      <p>
+        这是我的第一个作品，主要关注空间、光照和结构关系。
+        项目从概念到最终呈现经历了多个阶段。
+      </p>
+    </div>
+
+    <h2>作品图片</h2>
+
+    <div class="gallery">
+      <img src="/images/portfolio/project1/img1.jpg" alt="图 1">
+      <img src="/images/portfolio/project1/img2.jpg" alt="图 2">
+      <img src="/images/portfolio/project1/img3.jpg" alt="图 3">
+      <img src="/images/portfolio/project1/img4.jpg" alt="图 4">
+      <img src="/images/portfolio/project1/img5.jpg" alt="图 4">
+      <img src="/images/portfolio/project1/img6.jpg" alt="图 4">
+    </div>
+
+  </div>
+</body>
+</html>
